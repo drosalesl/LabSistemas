@@ -1,0 +1,80 @@
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261110190516
+Nombre de usuario: DROSALESL\deivy
+Usuario RunAs: DROSALESL\deivy
+Nombre de la configuración: 
+Máquina: DROSALESL (Microsoft Windows NT 10.0.26300.0)
+Aplicación host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Id. de proceso: 7968
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+La transcripción ha comenzado. El archivo de salida es C:\Users\deivy\Desktop\auditoria_completa.txt
+PS C:\Users\deivy\Sistemas Operativos> mkdir Frontend, Backend, BaseDatos
+
+
+    Directorio: C:\Users\deivy\Sistemas Operativos
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10/11/2026     19:05                Frontend
+d-----        10/11/2026     19:05                Backend
+d-----        10/11/2026     19:05                BaseDatos
+
+
+PS C:\Users\deivy\Sistemas Operativos> echo "Version 1.0 del Sistema de Ventas" > README.md
+PS C:\Users\deivy\Sistemas Operativos> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Version 1.0 del Sistema de Ventas"
+PS C:\Users\deivy\Sistemas Operativos> git init
+Initialized empty Git repository in C:/Users/deivy/Sistemas Operativos/.git/
+PS C:\Users\deivy\Sistemas Operativos> git add .
+
+PS C:\Users\deivy\Sistemas Operativos> git commit -m "Día 1: Despliegue de la estructura base"
+[main (root-commit) 181a2e8] Día 1: Despliegue de la estructura base
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+PS C:\Users\deivy\Sistemas Operativos> git remote add origin https://github.com/drosalesl/LabSistemas.git
+
+PS C:\Users\deivy\Sistemas Operativos> git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 307 bytes | 153.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/drosalesl/LabSistemas.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\deivy\Sistemas Operativos> echo "Conectando al servidor SQL..." > BaseDatos\conexion.ps1
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Conectando al servidor SQL..."
+PS C:\Users\deivy\Sistemas Operativos> echo "Actualizacion Dia 2: Modulo DB agregado" >> README.md
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Actualizacion Dia 2: Modulo DB agregado"
+PS C:\Users\deivy\Sistemas Operativos> mkdir Pruebas_Unitarias
+
+
+    Directorio: C:\Users\deivy\Sistemas Operativos
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10/11/2026     19:08                Pruebas_Unitarias
+
+
+PS C:\Users\deivy\Sistemas Operativos> git add .
+
+PS C:\Users\deivy\Sistemas Operativos> git commit -m "Día 2: Agregados scripts de DB y carpeta de pruebas"
+
+PS C:\Users\deivy\Sistemas Operativos> git push
+
+PS C:\Users\deivy\Sistemas Operativos> Stop-Transcript
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261110190947
+**********************
